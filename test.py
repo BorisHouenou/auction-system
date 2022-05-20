@@ -6,7 +6,7 @@ from auction_system.participant import Participant
 
 from auction_system.item import Item
 
-__author__ = "Guillaume Pouilloux <gui.pouilloux@gmail.com>"
+__author__ = "Landsapp <boris.houenou@landsapp.com>"
 
 logging.getLogger().setLevel(logging.INFO)
 
