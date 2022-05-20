@@ -1,7 +1,6 @@
 import uuid
 
-__author__ = "Guillaume Pouilloux <gui.pouilloux@gmail.com>"
-
+__author__ = "Landsapp <boris.houenou@landsapp.com>"
 
 # An item has a unique name and reserved price.
 # To buy an item, participants must submit bids with

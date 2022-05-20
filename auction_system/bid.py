@@ -1,7 +1,7 @@
 import logging
 import uuid
 
-__author__ = "Guillaume Pouilloux <gui.pouilloux@gmail.com>"
+__author__ = "Landsapp <boris.houenou@landsapp.com>"
 
 logging.getLogger().setLevel(logging.INFO)
 
@@ -11,7 +11,7 @@ logging.getLogger().setLevel(logging.INFO)
 class Bid:
     def __init__(self, bidder, auction, amount):
         if not auction.is_started:
-            logging.warning("Auction {} has not been started yet. "
+            logging.warning("Auction on this land {} has not been started yet. "
                             "Bid is not allowed".format(auction.id))
         elif auction.highest_bid is not None \
                 and auction.highest_bid.amount >= amount:
@@ -23,6 +23,6 @@ class Bid:
             self.amount = amount
             self.auction = auction
             self.auction.highest_bid = self
-            logging.info("{} bids {} for auction {}".format(bidder.name,
+            logging.info("{} bids {} for land are {}".format(bidder.name,
                                                             amount,
                                                             auction.id))

@@ -1,7 +1,7 @@
 import uuid
 from bid import Bid
 
-__author__ = "Guillaume Pouilloux <gui.pouilloux@gmail.com>"
+__author__ = "Landsapp <boris.houenou@landsapp.com>"
 
 
 # A participant can submit bids to an auction
